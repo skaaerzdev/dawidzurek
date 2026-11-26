@@ -20,6 +20,12 @@
 
 const BASE_URL = "http://localhost:8000";
 
+async function loadMedicine() {
+    const res = await fetch(`${BASE_URL}/medicines`)
+    const data = await res.json()
+    console.log()
+}
+
 // DOM elements (already present in index.html - no layout work needed).
 const resultsEl = document.getElementById("results");
 const loadingEl = document.getElementById("loading");
